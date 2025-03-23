@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - my_clone
+      - main
 
 jobs:
   build:
