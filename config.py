@@ -36,7 +36,7 @@ class Settings(BaseSettings):
             if os.path.exists(file_path):
                 with open(file_path, 'r') as file:
                     return file.read().strip()
-            raise ValueError(f"Password file {file_path} does not exist.")
+            raise ValueError(f"Password file {file_path} does'nt exist.")
         return v
 
     @computed_field
