@@ -27,7 +27,7 @@ def on_startup():
 
 @app.get("/")
 def hello():
-    return "Get lost, Dorker!"
+    return "Get lost, Dorker!!1"
 
 
 @app.post("/heroes/")
@@ -43,4 +43,5 @@ def create_hero(hero: Hero):
 def read_heroes():
     with Session(engine) as session:
         heroes = session.exec(select(Hero)).all()
+
         return heroes
